@@ -1,0 +1,6 @@
+- name: Email
+  link: mailto:ee23btech11009@iith.ac.in
+  icon: fas fa-envelope
+- name: GitHub
+  link: https://github.com/aroshishp
+  icon: fab fa-github

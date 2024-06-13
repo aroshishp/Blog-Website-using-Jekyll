@@ -1,0 +1,66 @@
+.katex-display {
+  background-color: $math-bg;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.katex-html {
+  padding: 10px 0px;
+}
+
+.highlight {
+  border-radius: $border-radius;
+}
+
+.highlighter-rouge {
+  color: var(--oc-black-5);
+}
+
+.rouge-table {
+  margin: 0;
+  font-size: 100%;
+
+  &,
+  td,
+  th {
+    border: 0;
+    padding: 0;
+  }
+
+  pre {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gutter {
+    vertical-align: top;
+    user-select: none;
+    opacity: .25;
+    padding-right: $spacer;
+  }
+}
+
+code,
+pre {
+  font-family: $code-font;
+  background-color: $code-bg;
+}
+
+code {
+  padding: .1em .25em;
+  border-radius: $border-radius;
+  background-color: $code-bg;
+}
+
+pre {
+  display: block;
+  overflow: auto;
+  padding: $spacer;
+  margin: $spacer 0;
+
+  code {
+    padding: 0;
+    background-color: inherit;
+    word-wrap: normal;
+  }
+}

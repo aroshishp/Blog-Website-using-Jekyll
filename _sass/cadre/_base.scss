@@ -1,0 +1,151 @@
+body {
+  background-color: $body-bg !important;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none !important;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color !important;
+    font-weight: bold !important;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+h1 {
+  color: $h1-color;
+  padding: 10px 0;
+}
+
+h2 {
+  color: $h2-color;
+  padding: 7px 0;
+}
+
+h3 {
+  color: $h3-color;
+  padding: 5px 0;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.fa-hover {
+  &:hover,
+  &:focus {
+    transform: scale(1.1) !important;
+  }
+}
+
+.card {
+  background-color: $card-bg !important;
+}
+
+.card-text a {
+  color: $link-color;
+}
+
+p.card-list {
+  padding-left: 1em !important;
+}
+
+@media only screen and (max-width: $md) {
+  p.card-list {
+    padding-left: 0 !important;
+  }
+}
+
+.container {
+  margin-top: $top-nav-space;
+  padding-top: $top-nav-space;
+}
+
+.list-unstyled {
+  padding-left: 10px !important;
+}
+
+.info-card {
+  padding: 10px 15px;
+  margin: 0 10px !important;
+}
+
+@media only screen and (max-width: $md) {
+  .info-card {
+    margin: 0 0 !important;
+  }
+}
+
+.sticky-div {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: calc(#{$top-nav-space} + #{$sticky-div-pad}) !important;
+}
+
+a.jump-to-anchor {
+  display: block;
+  position: relative;
+  top: calc(-1 * (#{$top-nav-space} + #{$sticky-div-pad}));
+  visibility: hidden;
+}
+
+.category-tags {
+  text-align: center;
+}
+
+.category-tags a {
+  display: inline-block;
+  border: 1px solid $site-tertiary;
+  border-radius: 999em;
+  border-color: white;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 5px 10px;
+
+  &:hover,
+  &:focus {
+    border-color: $site-primary;
+  }
+}
+
+.taxonomy-count {
+  display: inline-block;
+  border: 1px solid $site-tertiary;
+  // background-color: $site-tertiary;
+  background-color: white;
+  color: $body-bg;
+  border-radius: 999em;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.active {
+  color: $site-secondary !important;
+  font-weight: bold !important;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}

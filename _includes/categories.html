@@ -1,0 +1,27 @@
+  <div class="card info-card sticky-div h-100">
+
+    <div class="card-body">
+
+      <h3 class="card-title text-center">Categories</h3>
+
+      {% if site.categories.size > 0 %}
+        <div class="category-tags d-flex flex-wrap justify-content-center">
+          {% for category in site.categories %}
+            {% assign category_name = category | first %}
+            {% capture anchor_url %}categories.html#{{ category_name | slugify }}{% endcapture %}
+            {% assign category_name_list = category_name | split: ' ' %}
+            {% capture capitalized_category_name %}
+              {% for word in category_name_list %}
+                {{ word | capitalize }}
+              {% endfor %}
+            {% endcapture %}
+            <a class="card-link my-2 py-2 px-3" href="{{ anchor_url | relative_url }}">
+              {{ capitalized_category_name }}
+            </a>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="card-text d-flex justify-content-center">No categories to display yet.</p>
+      {% endif %}
+    </div>
+  </div>

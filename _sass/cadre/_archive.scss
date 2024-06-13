@@ -1,0 +1,17 @@
+.post-list-by-taxonomy {
+  time {
+    font-family: $code-font;
+  }
+}
+
+ul.post-list-by-taxonomy {
+  list-style-type: none;
+}
+
+.back-to-top {
+  display: block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-align: right;
+  text-decoration: none;
+}

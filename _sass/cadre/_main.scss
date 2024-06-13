@@ -1,0 +1,29 @@
+@import "functions";
+@import "predefined";
+@import "layout";
+@import "header";
+@import "footer";
+@import "post";
+@import "code";
+@import "toc";
+@import "home";
+@import "pagination";
+@import "archive";
+@import "about";
+@import "powered-by";
+@import "category-cards";
+@import "base";
+
+@import "highlight-light";
+
+body {
+    background-image: url('../../assets/images/bg2.jpeg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.white-text {
+    color: white;
+}
+.black-text {
+    color: black;
+}
