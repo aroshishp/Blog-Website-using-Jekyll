@@ -3,6 +3,12 @@
 This project aims to create a simple static blog website based on electronics. This website is built using [Jekyll](https://jekyllrb.com/) and is focused on providing information and resources related to electronics.
 It uses the Cadre (jekyll-theme-cadre) theme.
 
+<div>
+    <img src='https://github.com/aroshishp/Blog-Website-using-Jekyll/blob/main/img2.png?raw=true' width = 33%/>
+    <img src='https://github.com/aroshishp/Blog-Website-using-Jekyll/blob/main/img3.png?raw=true' width = 33%/>
+    <img src='https://github.com/aroshishp/Blog-Website-using-Jekyll/blob/main/img1.png?raw=true' width = 33%/>
+</div>
+
 ## Table of Contents
 
 - [Features](#features)
